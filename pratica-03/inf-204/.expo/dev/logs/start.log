@@ -1,0 +1,390 @@
+{"_e":"root:init","_t":1786054471630,"format":"v0-jsonl","version":"57.0.13"}
+{"_e":"env:mode","_t":1786054471631,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786054471633,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786054472071,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786054472958,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1786054474285,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786054477234,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1786054528013,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1786054528014,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1786054528015,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1786054528116,"id":"1","progress":0.7055999999999999,"total":150,"current":126}
+{"_e":"metro:bundling:done","_t":1786054528192,"id":"1","total":150,"ms":178.7147}
+{"_e":"metro:client_log","_t":1786054528275,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1786054528276,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1786054799072,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1786054799091,"level":"error","data":["[ReferenceError: contagem is not defined]","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mtitulo}\u001b[33m>\u001b[39m\u001b[32m\"Contagem Atual:\"\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mnumero}\u001b[33m>\u001b[39m{contagem}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mButton\u001b[39m\n \u001b[90m 12 |\u001b[39m         title\u001b[33m=\u001b[39m\u001b[32m\"Incrementar +1\"\u001b[39m\n \u001b[90m 13 |\u001b[39m         onPress\u001b[33m=\u001b[39m{() \u001b[33m=>\u001b[39m setContagem(contagem \u001b[33m+\u001b[39m \u001b[35m1\u001b[39m)}\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:10:36)\u001b[39m","\n\n\u001b[1mCode: withDevTools.web.tsx\u001b[22m\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mreturn\u001b[39m (\n \u001b[90m 10 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mAppRootComponent\u001b[39m {\u001b[33m...\u001b[39mprops} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mDevLoadingView\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 13 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 14 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  WithDevTools (node_modules\\expo\\src\\launch\\withDevTools.web.tsx:11:9)\u001b[39m\u001b[22m"]}
+{"_e":"metro:client_log","_t":1786054879074,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1786054879080,"level":"error","data":["[ReferenceError: useState is not defined]","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m 3 |\u001b[39m\n \u001b[90m 4 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m \u001b[36mfunction\u001b[39m \u001b[33mApp\u001b[39m() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mconst\u001b[39m [contagem\u001b[33m,\u001b[39m setContagem] \u001b[33m=\u001b[39m useState(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m\n \u001b[90m 7 |\u001b[39m   \u001b[36mreturn\u001b[39m (\n \u001b[90m 8 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mView\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mcontainer}\u001b[33m>\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:5:35)\u001b[39m","\n\n\u001b[1mCode: withDevTools.web.tsx\u001b[22m\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mreturn\u001b[39m (\n \u001b[90m 10 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mAppRootComponent\u001b[39m {\u001b[33m...\u001b[39mprops} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mDevLoadingView\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 13 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 14 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  WithDevTools (node_modules\\expo\\src\\launch\\withDevTools.web.tsx:11:9)\u001b[39m\u001b[22m"]}
+{"_e":"metro:client_log","_t":1786054942057,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1786054942064,"level":"error","data":["[ReferenceError: Button is not defined]","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m 11 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mtitulo}\u001b[33m>\u001b[39m\u001b[32m\"Contagem Atual:\"\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 12 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mnumero}\u001b[33m>\u001b[39m{contagem}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mButton\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m         title\u001b[33m=\u001b[39m\u001b[32m\"Incrementar +1\"\u001b[39m\n \u001b[90m 15 |\u001b[39m         onPress\u001b[33m=\u001b[39m{() \u001b[33m=>\u001b[39m setContagem(contagem \u001b[33m+\u001b[39m \u001b[35m1\u001b[39m)}\n \u001b[90m 16 |\u001b[39m       \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:13:8)\u001b[39m","\n\n\u001b[1mCode: withDevTools.web.tsx\u001b[22m\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mreturn\u001b[39m (\n \u001b[90m 10 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mAppRootComponent\u001b[39m {\u001b[33m...\u001b[39mprops} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mDevLoadingView\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 13 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 14 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  WithDevTools (node_modules\\expo\\src\\launch\\withDevTools.web.tsx:11:9)\u001b[39m\u001b[22m"]}
+{"_e":"root:init","_t":1786577952753,"format":"v0-jsonl","version":"57.0.13"}
+{"_e":"env:mode","_t":1786577952768,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786577952798,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786577957873,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786577968693,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1786577972496,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786577979750,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1786577997183,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1786577997184,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1786577997188,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1786577997287,"id":"1","progress":0.48999999999999994,"total":120,"current":84}
+{"_e":"metro:bundling:progress","_t":1786577997388,"id":"1","progress":0.9712245326612057,"total":207,"current":204}
+{"_e":"metro:bundling:done","_t":1786577997623,"id":"1","total":207,"ms":439.5739}
+{"_e":"metro:client_log","_t":1786577998450,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1786577998450,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1786579167817,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1786579167835,"level":"error","data":["[TypeError: Assignment to constant variable.]","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m nomeProfessor \u001b[33m=\u001b[39m \u001b[32m\"Joao Vitor\"\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   nomeProfessor \u001b[33m=\u001b[39m \u001b[32m\"novo nome\"\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[36mreturn\u001b[39m (\n \u001b[90m 11 |\u001b[39m     \u001b[33m<\u001b[39m\u001b[33mView\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mcontainer}\u001b[33m>\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:8:16)\u001b[39m","\n\n\u001b[1mCode: withDevTools.web.tsx\u001b[22m\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mreturn\u001b[39m (\n \u001b[90m 10 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mAppRootComponent\u001b[39m {\u001b[33m...\u001b[39mprops} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mDevLoadingView\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 13 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 14 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  WithDevTools (node_modules\\expo\\src\\launch\\withDevTools.web.tsx:11:9)\u001b[39m\u001b[22m"]}
+{"_e":"metro:client_log","_t":1786579520795,"level":"error","data":["Unexpected text node: ]. A text node cannot be a child of a <View>.","\n\n\u001b[1mCode: setupHMR.ts\u001b[22m\n\u001b[0m \u001b[90m 79 |\u001b[39m \u001b[36mfunction\u001b[39m captureCurrentStack() {\n \u001b[90m 80 |\u001b[39m   \u001b[90m// If you're reading this, look deeper into the call stack to find the actual error source.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m   \u001b[36mreturn\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mNamelessError\u001b[39m()\u001b[33m.\u001b[39mstack\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m }\n \u001b[90m 83 |\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  captureCurrentStack (node_modules\\expo\\src\\async-require\\setupHMR.ts:81:10)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  addErrorStacks (node_modules\\expo\\src\\async-require\\setupHMR.ts:59:19)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  console.level (node_modules\\expo\\src\\async-require\\setupHMR.ts:22:48)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  React.forwardRef$argument_0 (node_modules\\react-native-web\\dist\\exports\\View\\index.js:52:5)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  Array.forEach (<anonymous>)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  React.forwardRef$argument_0 (node_modules\\react-native-web\\dist\\exports\\View\\index.js:50:5)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  callComponent.react_stack_bottom_frame (node_modules\\react-dom\\cjs\\react-dom-client.development.js:25904:20)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  renderWithHooks (node_modules\\react-dom\\cjs\\react-dom-client.development.js:7662:22)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  updateForwardRef (node_modules\\react-dom\\cjs\\react-dom-client.development.js:9724:19)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  beginWork (node_modules\\react-dom\\cjs\\react-dom-client.development.js:12117:18)\u001b[39m\u001b[22m","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m   \u001b[36mconst\u001b[39m nomeProfessor \u001b[33m=\u001b[39m \u001b[32m\"Joao Vitor\"\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   \u001b[36mlet\u001b[39m contador \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   \u001b[90m// contador = contador + 1;\u001b[39m\n \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:8:19)\u001b[39m"]}
+{"_e":"metro:client_log","_t":1786579973790,"level":"log","data":["{\"nome\": \"Joao Vitor\", \"profissao\": \"Professor\"}"]}
+{"_e":"metro:client_log","_t":1786579997342,"level":"log","data":["{\"nome\": \"Joao Vitor\", \"profissao\": \"Professor\"}"]}
+{"_e":"metro:client_log","_t":1786579997344,"level":"log","data":["{\"nome\": \"Joao Vitor\", \"profissao\": \"Professor\"}"]}
+{"_e":"metro:client_log","_t":1786579997346,"level":"warn","data":["An error occurred in the <div> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1786579997526,"level":"error","data":["[Error: Objects are not valid as a React child (found: object with keys {nome, profissao}). If you meant to render a collection of children, use an array instead.]","\n\n\u001b[1mCode: react-dom-client.development.js\u001b[22m\n\u001b[0m \u001b[90m 6097 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 6098 |\u001b[39m       returnFiber \u001b[33m=\u001b[39m \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mprototype\u001b[33m.\u001b[39mtoString\u001b[33m.\u001b[39mcall(newChild)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6099 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[33mError\u001b[39m(\n \u001b[90m      |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6100 |\u001b[39m         \u001b[32m\"Objects are not valid as a React child (found: \"\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 6101 |\u001b[39m           (\u001b[32m\"[object Object]\"\u001b[39m \u001b[33m===\u001b[39m returnFiber\n \u001b[90m 6102 |\u001b[39m             \u001b[33m?\u001b[39m \u001b[32m\"object with keys {\"\u001b[39m \u001b[33m+\u001b[39m \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mkeys(newChild)\u001b[33m.\u001b[39mjoin(\u001b[32m\", \"\u001b[39m) \u001b[33m+\u001b[39m \u001b[32m\"}\"\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  throwOnInvalidObjectTypeImpl (node_modules\\react-dom\\cjs\\react-dom-client.development.js:6099:13)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  throwOnInvalidObjectType (node_modules\\react-dom\\cjs\\react-dom-client.development.js:6113:11)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  updateSlot (node_modules\\react-dom\\cjs\\react-dom-client.development.js:6482:11)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  reconcileChildrenArray (node_modules\\react-dom\\cjs\\react-dom-client.development.js:6635:26)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  reconcileChildFibersImpl (node_modules\\react-dom\\cjs\\react-dom-client.development.js:6993:30)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  <anonymous> (node_modules\\react-dom\\cjs\\react-dom-client.development.js:7098:33)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  reconcileChildren (node_modules\\react-dom\\cjs\\react-dom-client.development.js:9702:13)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  beginWork (node_modules\\react-dom\\cjs\\react-dom-client.development.js:12049:13)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  runWithFiberInDEV (node_modules\\react-dom\\cjs\\react-dom-client.development.js:871:30)\u001b[39m\u001b[22m\n\u001b[2m\u001b[90m  performUnitOfWork (node_modules\\react-dom\\cjs\\react-dom-client.development.js:17641:22)\u001b[39m\u001b[22m","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m 12 |\u001b[39m   console\u001b[33m.\u001b[39mlog(usuario)\n \u001b[90m 13 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 14 |\u001b[39m   \u001b[36mconst\u001b[39m { nome\u001b[33m,\u001b[39m profissao } \u001b[33m=\u001b[39m usuario\n \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m   \u001b[36mlet\u001b[39m contador \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:14:17)\u001b[39m"]}
+{"_e":"metro:client_log","_t":1786580050711,"level":"log","data":["{\"nome\": \"Joao Vitor\", \"profissao\": \"Professor\"}"]}
+{"_e":"metro:client_log","_t":1786580324607,"level":"log","data":["{\"nome\": \"Joao Vitor\", \"profissao\": \"Professor\"}"]}
+{"_e":"metro:client_log","_t":1786580602788,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1786580602795,"level":"error","data":["[ReferenceError: preco is not defined]","\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mtitulo}\u001b[33m>\u001b[39m\u001b[32m\"Preços:\"\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m       precos\u001b[33m.\u001b[39mmap((preco) \u001b[33m=>\u001b[39m (\u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mnumero}\u001b[33m>\u001b[39m{preco}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m))\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m       {\u001b[90m/* <Text style={styles.titulo}>\"CONTADOR:\"</Text>\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  App (App.js:18:59)\u001b[39m","\n\n\u001b[1mCode: withDevTools.web.tsx\u001b[22m\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mreturn\u001b[39m (\n \u001b[90m 10 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mAppRootComponent\u001b[39m {\u001b[33m...\u001b[39mprops} \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[33m<\u001b[39m\u001b[33mDevLoadingView\u001b[39m \u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 13 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 14 |\u001b[39m     )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[2m\u001b[90m  WithDevTools (node_modules\\expo\\src\\launch\\withDevTools.web.tsx:11:9)\u001b[39m\u001b[22m"]}
+{"_e":"metro:client_log","_t":1786580652794,"level":"error","data":["\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mtitulo}\u001b[33m>\u001b[39m\u001b[32m\"Preços:\"\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m       {precos\u001b[33m.\u001b[39mmap((preco) \u001b[33m=>\u001b[39m \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mnumero}\u001b[33m>\u001b[39m{preco}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m)}\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m       {\u001b[90m/* <Text style={styles.titulo}>\"CONTADOR:\"</Text>\u001b[39m\n \u001b[90m 21 |\u001b[39m \u001b[90m      <Text style={styles.numero}>{contagem}</Text>\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  precos.map$argument_0 (App.js:18:30)\u001b[39m\n\u001b[90m  App (App.js:18:15)\u001b[39m"]}
+{"_e":"metro:bundling:started","_t":1786580789468,"id":"c","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1786580789468,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1786580789478,"id":"c","total":1,"ms":10.2543}
+{"_e":"metro:client_log","_t":1786580789565,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1786580789565,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1786580789569,"level":"error","data":["\n\n\u001b[1mCode: App.js\u001b[22m\n\u001b[0m \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m       \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mtitulo}\u001b[33m>\u001b[39m\u001b[32m\"Preços:\"\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m       {precos\u001b[33m.\u001b[39mmap((preco) \u001b[33m=>\u001b[39m \u001b[33m<\u001b[39m\u001b[33mText\u001b[39m style\u001b[33m=\u001b[39m{styles\u001b[33m.\u001b[39mtitulo}\u001b[33m>\u001b[39m{preco}\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mText\u001b[39m\u001b[33m>\u001b[39m)}\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m       {\u001b[90m/* <Text style={styles.titulo}>\"CONTADOR:\"</Text>\u001b[39m\n \u001b[90m 21 |\u001b[39m \u001b[90m      <Text style={styles.numero}>{contagem}</Text>\u001b[39m\u001b[0m\n\u001b[1mCall Stack\u001b[22m\n\u001b[90m  precos.map$argument_0 (App.js:18:30)\u001b[39m\n\u001b[90m  App (App.js:18:15)\u001b[39m"]}
+{"_e":"root:init","_t":1788278973994,"format":"v0-jsonl","version":"57.0.13"}
+{"_e":"env:mode","_t":1788278973995,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788278974002,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788278974487,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788278975271,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788278975445,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nspawn /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/node_modules/fb-dotslash/bin/linux-musl.x86_64/dotslash EACCES"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788278975694,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788278981653,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788278986651,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788278986654,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788278986673,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788278988480,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1788278988660,"id":"1","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1788278988827,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1788278988927,"id":"1","progress":0.04000000000000001,"total":9,"current":2}
+{"_e":"metro:bundling:progress","_t":1788278989033,"id":"1","progress":0.0625,"total":12,"current":3}
+{"_e":"metro:bundling:progress","_t":1788278989100,"id":"1","progress":0.1111111111111111,"total":12,"current":4}
+{"_e":"metro:bundling:progress","_t":1788278989201,"id":"1","progress":0.18367346938775508,"total":14,"current":6}
+{"_e":"metro:bundling:progress","_t":1788278989350,"id":"1","progress":0.22145328719723184,"total":17,"current":8}
+{"_e":"metro:bundling:progress","_t":1788278989465,"id":"1","progress":0.30250000000000005,"total":20,"current":11}
+{"_e":"metro:bundling:progress","_t":1788278990399,"id":"1","progress":0.36,"total":20,"current":12}
+{"_e":"metro:bundling:progress","_t":1788278990501,"id":"1","progress":0.36,"total":27,"current":15}
+{"_e":"metro:bundling:progress","_t":1788278990634,"id":"1","progress":0.3686224489795918,"total":28,"current":17}
+{"_e":"metro:bundling:progress","_t":1788278990735,"id":"1","progress":0.3686224489795918,"total":29,"current":17}
+{"_e":"metro:bundling:progress","_t":1788278991005,"id":"1","progress":0.38525564803804996,"total":29,"current":18}
+{"_e":"metro:bundling:progress","_t":1788278991111,"id":"1","progress":0.38525564803804996,"total":33,"current":20}
+{"_e":"metro:bundling:progress","_t":1788278991208,"id":"1","progress":0.4444444444444444,"total":33,"current":22}
+{"_e":"metro:bundling:progress","_t":1788278991307,"id":"1","progress":0.4565376186997808,"total":37,"current":25}
+{"_e":"metro:bundling:progress","_t":1788278991424,"id":"1","progress":0.49379108838568303,"total":37,"current":26}
+{"_e":"metro:bundling:progress","_t":1788278991542,"id":"1","progress":0.5325054784514244,"total":37,"current":27}
+{"_e":"metro:bundling:progress","_t":1788278991643,"id":"1","progress":0.5325054784514244,"total":51,"current":30}
+{"_e":"metro:bundling:progress","_t":1788278991743,"id":"1","progress":0.5325054784514244,"total":55,"current":33}
+{"_e":"metro:bundling:progress","_t":1788278991852,"id":"1","progress":0.5325054784514244,"total":57,"current":35}
+{"_e":"metro:bundling:progress","_t":1788278991953,"id":"1","progress":0.5325054784514244,"total":79,"current":38}
+{"_e":"metro:bundling:progress","_t":1788278991978,"id":"1","progress":0.5325054784514244,"total":79,"current":39}
+{"_e":"metro:bundling:progress","_t":1788278992077,"id":"1","progress":0.5325054784514244,"total":80,"current":42}
+{"_e":"metro:bundling:progress","_t":1788278992177,"id":"1","progress":0.5325054784514244,"total":83,"current":47}
+{"_e":"metro:bundling:progress","_t":1788278992302,"id":"1","progress":0.5325054784514244,"total":85,"current":50}
+{"_e":"metro:bundling:progress","_t":1788278992403,"id":"1","progress":0.5325054784514244,"total":110,"current":59}
+{"_e":"metro:bundling:progress","_t":1788278992503,"id":"1","progress":0.5325054784514244,"total":113,"current":67}
+{"_e":"metro:bundling:progress","_t":1788278992607,"id":"1","progress":0.5325054784514244,"total":115,"current":77}
+{"_e":"metro:bundling:progress","_t":1788278992718,"id":"1","progress":0.5325054784514244,"total":118,"current":81}
+{"_e":"metro:bundling:progress","_t":1788278992819,"id":"1","progress":0.5325054784514244,"total":123,"current":86}
+{"_e":"metro:bundling:progress","_t":1788278992927,"id":"1","progress":0.5325054784514244,"total":132,"current":94}
+{"_e":"metro:bundling:progress","_t":1788278993050,"id":"1","progress":0.5325054784514244,"total":136,"current":98}
+{"_e":"metro:bundling:progress","_t":1788278993151,"id":"1","progress":0.5325054784514244,"total":141,"current":101}
+{"_e":"metro:bundling:progress","_t":1788278993261,"id":"1","progress":0.5784566554255108,"total":142,"current":108}
+{"_e":"metro:bundling:progress","_t":1788278993361,"id":"1","progress":0.5884781384875211,"total":146,"current":112}
+{"_e":"metro:bundling:progress","_t":1788278993462,"id":"1","progress":0.6315512477522914,"total":151,"current":120}
+{"_e":"metro:bundling:progress","_t":1788278993566,"id":"1","progress":0.6890085010038874,"total":153,"current":127}
+{"_e":"metro:bundling:progress","_t":1788278993689,"id":"1","progress":0.70688466063532,"total":157,"current":132}
+{"_e":"metro:bundling:progress","_t":1788278993792,"id":"1","progress":0.742415252561212,"total":159,"current":137}
+{"_e":"metro:bundling:progress","_t":1788278993901,"id":"1","progress":0.742415252561212,"total":168,"current":143}
+{"_e":"metro:bundling:progress","_t":1788278994002,"id":"1","progress":0.7797612940733901,"total":171,"current":151}
+{"_e":"metro:bundling:progress","_t":1788278994103,"id":"1","progress":0.8341073874837114,"total":173,"current":158}
+{"_e":"metro:bundling:progress","_t":1788278994203,"id":"1","progress":0.8341073874837114,"total":179,"current":162}
+{"_e":"metro:bundling:progress","_t":1788278994305,"id":"1","progress":0.8341073874837114,"total":189,"current":167}
+{"_e":"metro:bundling:progress","_t":1788278994417,"id":"1","progress":0.8394780844823333,"total":191,"current":175}
+{"_e":"metro:bundling:progress","_t":1788278994519,"id":"1","progress":0.9102717617659308,"total":196,"current":187}
+{"_e":"metro:bundling:progress","_t":1788278994619,"id":"1","progress":0.9598031384472675,"total":197,"current":193}
+{"_e":"metro:bundling:progress","_t":1788278994722,"id":"1","progress":0.9598031384472675,"total":210,"current":200}
+{"_e":"metro:bundling:progress","_t":1788278994820,"id":"1","progress":0.990498866213152,"total":210,"current":209}
+{"_e":"metro:bundling:progress","_t":1788278999300,"id":"1","progress":0.999,"total":210,"current":210}
+{"_e":"metro:bundling:progress","_t":1788278999401,"id":"1","progress":0.999,"total":214,"current":212}
+{"_e":"metro:bundling:progress","_t":1788278999440,"id":"1","progress":0.999,"total":214,"current":213}
+{"_e":"metro:bundling:progress","_t":1788278999541,"id":"1","progress":0.999,"total":214,"current":214}
+{"_e":"metro:bundling:done","_t":1788278999750,"id":"1","total":214,"ms":13098.11798}
+{"_e":"metro:client_log","_t":1788279000117,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788279000119,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1788279006374,"id":"3","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788279006374,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788279006405,"id":"3","total":1,"ms":30.495614}
+{"_e":"metro:client_log","_t":1788279007260,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788279007261,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"root:init","_t":1788280750113,"format":"v0-jsonl","version":"57.0.13"}
+{"_e":"env:mode","_t":1788280750116,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788280750122,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788280750660,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788280751460,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788280751652,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nspawn /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/node_modules/fb-dotslash/bin/linux-musl.x86_64/dotslash EACCES"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788280751871,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788280758151,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788280760853,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788280760854,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788280760869,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788280762743,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1788280762842,"id":"1","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1788280762960,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1788280763071,"id":"1","progress":0.09,"total":10,"current":3}
+{"_e":"metro:bundling:progress","_t":1788280763170,"id":"1","progress":0.09,"total":12,"current":3}
+{"_e":"metro:bundling:progress","_t":1788280763192,"id":"1","progress":0.1111111111111111,"total":12,"current":4}
+{"_e":"metro:bundling:progress","_t":1788280763294,"id":"1","progress":0.2177777777777778,"total":15,"current":7}
+{"_e":"metro:bundling:progress","_t":1788280763405,"id":"1","progress":0.27700831024930744,"total":19,"current":10}
+{"_e":"metro:bundling:progress","_t":1788280763505,"id":"1","progress":0.30250000000000005,"total":20,"current":11}
+{"_e":"metro:bundling:progress","_t":1788280764454,"id":"1","progress":0.36,"total":20,"current":12}
+{"_e":"metro:bundling:progress","_t":1788280764555,"id":"1","progress":0.36,"total":24,"current":14}
+{"_e":"metro:bundling:progress","_t":1788280764662,"id":"1","progress":0.36,"total":28,"current":16}
+{"_e":"metro:bundling:progress","_t":1788280764783,"id":"1","progress":0.46045918367346944,"total":28,"current":19}
+{"_e":"metro:bundling:progress","_t":1788280764883,"id":"1","progress":0.47562425683709875,"total":29,"current":20}
+{"_e":"metro:bundling:progress","_t":1788280764983,"id":"1","progress":0.48999999999999994,"total":30,"current":21}
+{"_e":"metro:bundling:progress","_t":1788280765061,"id":"1","progress":0.5377777777777777,"total":30,"current":22}
+{"_e":"metro:bundling:progress","_t":1788280765166,"id":"1","progress":0.5377777777777777,"total":35,"current":25}
+{"_e":"metro:bundling:progress","_t":1788280765265,"id":"1","progress":0.5377777777777777,"total":40,"current":27}
+{"_e":"metro:bundling:progress","_t":1788280765429,"id":"1","progress":0.5377777777777777,"total":40,"current":28}
+{"_e":"metro:bundling:progress","_t":1788280765548,"id":"1","progress":0.5377777777777777,"total":46,"current":29}
+{"_e":"metro:bundling:progress","_t":1788280765649,"id":"1","progress":0.5377777777777777,"total":53,"current":32}
+{"_e":"metro:bundling:progress","_t":1788280765759,"id":"1","progress":0.5377777777777777,"total":53,"current":34}
+{"_e":"metro:bundling:progress","_t":1788280765860,"id":"1","progress":0.5377777777777777,"total":55,"current":36}
+{"_e":"metro:bundling:progress","_t":1788280765961,"id":"1","progress":0.5377777777777777,"total":78,"current":38}
+{"_e":"metro:bundling:progress","_t":1788280766104,"id":"1","progress":0.5377777777777777,"total":90,"current":41}
+{"_e":"metro:bundling:progress","_t":1788280766227,"id":"1","progress":0.5377777777777777,"total":93,"current":43}
+{"_e":"metro:bundling:progress","_t":1788280766326,"id":"1","progress":0.5377777777777777,"total":94,"current":46}
+{"_e":"metro:bundling:progress","_t":1788280766435,"id":"1","progress":0.5377777777777777,"total":101,"current":50}
+{"_e":"metro:bundling:progress","_t":1788280766535,"id":"1","progress":0.5377777777777777,"total":105,"current":57}
+{"_e":"metro:bundling:progress","_t":1788280766644,"id":"1","progress":0.5377777777777777,"total":109,"current":63}
+{"_e":"metro:bundling:progress","_t":1788280766743,"id":"1","progress":0.5377777777777777,"total":114,"current":72}
+{"_e":"metro:bundling:progress","_t":1788280766846,"id":"1","progress":0.5377777777777777,"total":116,"current":79}
+{"_e":"metro:bundling:progress","_t":1788280766947,"id":"1","progress":0.5377777777777777,"total":120,"current":85}
+{"_e":"metro:bundling:progress","_t":1788280767051,"id":"1","progress":0.5377777777777777,"total":128,"current":92}
+{"_e":"metro:bundling:progress","_t":1788280767151,"id":"1","progress":0.5377777777777777,"total":133,"current":96}
+{"_e":"metro:bundling:progress","_t":1788280767260,"id":"1","progress":0.5377777777777777,"total":140,"current":102}
+{"_e":"metro:bundling:progress","_t":1788280767360,"id":"1","progress":0.6197374377546402,"total":141,"current":111}
+{"_e":"metro:bundling:progress","_t":1788280767463,"id":"1","progress":0.6421936573465941,"total":146,"current":117}
+{"_e":"metro:bundling:progress","_t":1788280767563,"id":"1","progress":0.6594747984325031,"total":149,"current":121}
+{"_e":"metro:bundling:progress","_t":1788280767673,"id":"1","progress":0.6655124653739611,"total":152,"current":124}
+{"_e":"metro:bundling:progress","_t":1788280767772,"id":"1","progress":0.683801775147929,"total":156,"current":129}
+{"_e":"metro:bundling:progress","_t":1788280767877,"id":"1","progress":0.7102567145286975,"total":159,"current":134}
+{"_e":"metro:bundling:progress","_t":1788280767982,"id":"1","progress":0.7102567145286975,"total":168,"current":140}
+{"_e":"metro:bundling:progress","_t":1788280768082,"id":"1","progress":0.740400216333153,"total":172,"current":148}
+{"_e":"metro:bundling:progress","_t":1788280768181,"id":"1","progress":0.7680848377730085,"total":178,"current":156}
+{"_e":"metro:bundling:progress","_t":1788280768282,"id":"1","progress":0.8079787905567478,"total":178,"current":160}
+{"_e":"metro:bundling:progress","_t":1788280768384,"id":"1","progress":0.8919753086419753,"total":180,"current":170}
+{"_e":"metro:bundling:progress","_t":1788280768487,"id":"1","progress":0.8953636258526998,"total":186,"current":176}
+{"_e":"metro:bundling:progress","_t":1788280768598,"id":"1","progress":0.8990576928239685,"total":193,"current":183}
+{"_e":"metro:bundling:progress","_t":1788280768697,"id":"1","progress":0.9498827591538046,"total":197,"current":192}
+{"_e":"metro:bundling:progress","_t":1788280768797,"id":"1","progress":0.9498827591538046,"total":210,"current":201}
+{"_e":"metro:bundling:progress","_t":1788280768897,"id":"1","progress":0.990498866213152,"total":210,"current":209}
+{"_e":"metro:bundling:progress","_t":1788280773399,"id":"1","progress":0.999,"total":210,"current":210}
+{"_e":"metro:bundling:progress","_t":1788280773499,"id":"1","progress":0.999,"total":214,"current":212}
+{"_e":"metro:bundling:progress","_t":1788280773535,"id":"1","progress":0.999,"total":214,"current":213}
+{"_e":"metro:bundling:progress","_t":1788280773636,"id":"1","progress":0.999,"total":214,"current":214}
+{"_e":"metro:bundling:done","_t":1788280773903,"id":"1","total":214,"ms":13049.889275}
+{"_e":"metro:client_log","_t":1788280774305,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788280774307,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"root:init","_t":1788357010902,"format":"v0-jsonl","version":"57.0.13"}
+{"_e":"env:mode","_t":1788357010904,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788357010911,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788357011461,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788357012338,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788357012549,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nspawn /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/node_modules/fb-dotslash/bin/linux-musl.x86_64/dotslash EACCES"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788357012794,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788357018275,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788357022013,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788357022016,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788357022035,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788357023881,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1788357023981,"id":"1","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1788357024096,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1788357024197,"id":"1","progress":0.09,"total":9,"current":3}
+{"_e":"metro:bundling:progress","_t":1788357024296,"id":"1","progress":0.09,"total":12,"current":3}
+{"_e":"metro:bundling:progress","_t":1788357024357,"id":"1","progress":0.1111111111111111,"total":12,"current":4}
+{"_e":"metro:bundling:progress","_t":1788357024458,"id":"1","progress":0.2177777777777778,"total":15,"current":7}
+{"_e":"metro:bundling:progress","_t":1788357024559,"id":"1","progress":0.27700831024930744,"total":19,"current":10}
+{"_e":"metro:bundling:progress","_t":1788357024659,"id":"1","progress":0.30250000000000005,"total":20,"current":11}
+{"_e":"metro:bundling:progress","_t":1788357025522,"id":"1","progress":0.36,"total":20,"current":12}
+{"_e":"metro:bundling:progress","_t":1788357025624,"id":"1","progress":0.36,"total":27,"current":15}
+{"_e":"metro:bundling:progress","_t":1788357025749,"id":"1","progress":0.3686224489795918,"total":28,"current":17}
+{"_e":"metro:bundling:progress","_t":1788357025907,"id":"1","progress":0.41326530612244905,"total":28,"current":18}
+{"_e":"metro:bundling:progress","_t":1788357026008,"id":"1","progress":0.46045918367346944,"total":28,"current":19}
+{"_e":"metro:bundling:progress","_t":1788357026120,"id":"1","progress":0.48999999999999994,"total":30,"current":21}
+{"_e":"metro:bundling:progress","_t":1788357026324,"id":"1","progress":0.5377777777777777,"total":30,"current":22}
+{"_e":"metro:bundling:progress","_t":1788357026428,"id":"1","progress":0.5377777777777777,"total":35,"current":25}
+{"_e":"metro:bundling:progress","_t":1788357026529,"id":"1","progress":0.5377777777777777,"total":38,"current":26}
+{"_e":"metro:bundling:progress","_t":1788357026628,"id":"1","progress":0.5377777777777777,"total":40,"current":27}
+{"_e":"metro:bundling:progress","_t":1788357026729,"id":"1","progress":0.5377777777777777,"total":45,"current":28}
+{"_e":"metro:bundling:progress","_t":1788357026823,"id":"1","progress":0.5377777777777777,"total":45,"current":29}
+{"_e":"metro:bundling:progress","_t":1788357026925,"id":"1","progress":0.5377777777777777,"total":45,"current":33}
+{"_e":"metro:bundling:progress","_t":1788357027047,"id":"1","progress":0.5941840277777778,"total":48,"current":37}
+{"_e":"metro:bundling:progress","_t":1788357027149,"id":"1","progress":0.5941840277777778,"total":81,"current":40}
+{"_e":"metro:bundling:progress","_t":1788357027248,"id":"1","progress":0.5941840277777778,"total":90,"current":43}
+{"_e":"metro:bundling:progress","_t":1788357027355,"id":"1","progress":0.5941840277777778,"total":93,"current":46}
+{"_e":"metro:bundling:progress","_t":1788357027458,"id":"1","progress":0.5941840277777778,"total":108,"current":51}
+{"_e":"metro:bundling:progress","_t":1788357027558,"id":"1","progress":0.5941840277777778,"total":116,"current":61}
+{"_e":"metro:bundling:progress","_t":1788357027660,"id":"1","progress":0.5941840277777778,"total":118,"current":70}
+{"_e":"metro:bundling:progress","_t":1788357027760,"id":"1","progress":0.5941840277777778,"total":122,"current":76}
+{"_e":"metro:bundling:progress","_t":1788357027863,"id":"1","progress":0.5941840277777778,"total":125,"current":79}
+{"_e":"metro:bundling:progress","_t":1788357027965,"id":"1","progress":0.5941840277777778,"total":125,"current":81}
+{"_e":"metro:bundling:progress","_t":1788357028067,"id":"1","progress":0.5941840277777778,"total":131,"current":85}
+{"_e":"metro:bundling:progress","_t":1788357028172,"id":"1","progress":0.5941840277777778,"total":135,"current":93}
+{"_e":"metro:bundling:progress","_t":1788357028286,"id":"1","progress":0.5941840277777778,"total":141,"current":97}
+{"_e":"metro:bundling:progress","_t":1788357028386,"id":"1","progress":0.5941840277777778,"total":146,"current":108}
+{"_e":"metro:bundling:progress","_t":1788357028486,"id":"1","progress":0.6165938471240033,"total":149,"current":117}
+{"_e":"metro:bundling:progress","_t":1788357028589,"id":"1","progress":0.6743563878777247,"total":151,"current":124}
+{"_e":"metro:bundling:progress","_t":1788357028690,"id":"1","progress":0.6743563878777247,"total":162,"current":133}
+{"_e":"metro:bundling:progress","_t":1788357028792,"id":"1","progress":0.7027860446771127,"total":167,"current":140}
+{"_e":"metro:bundling:progress","_t":1788357028901,"id":"1","progress":0.7159763313609467,"total":169,"current":143}
+{"_e":"metro:bundling:progress","_t":1788357028998,"id":"1","progress":0.7263688016528926,"total":176,"current":150}
+{"_e":"metro:bundling:progress","_t":1788357029101,"id":"1","progress":0.7428344678123379,"total":181,"current":156}
+{"_e":"metro:bundling:progress","_t":1788357029203,"id":"1","progress":0.7702863286555002,"total":188,"current":165}
+{"_e":"metro:bundling:progress","_t":1788357029303,"id":"1","progress":0.8203996600970368,"total":191,"current":173}
+{"_e":"metro:bundling:progress","_t":1788357029417,"id":"1","progress":0.9093686895525561,"total":194,"current":185}
+{"_e":"metro:bundling:progress","_t":1788357029529,"id":"1","progress":0.9093686895525561,"total":211,"current":197}
+{"_e":"metro:bundling:progress","_t":1788357029630,"id":"1","progress":0.9717661328361896,"total":211,"current":208}
+{"_e":"metro:bundling:progress","_t":1788357029731,"id":"1","progress":0.9905437883246108,"total":211,"current":210}
+{"_e":"metro:bundling:progress","_t":1788357034023,"id":"1","progress":0.999,"total":211,"current":211}
+{"_e":"metro:bundling:progress","_t":1788357034124,"id":"1","progress":0.999,"total":215,"current":213}
+{"_e":"metro:bundling:progress","_t":1788357034143,"id":"1","progress":0.999,"total":215,"current":214}
+{"_e":"metro:bundling:progress","_t":1788357034244,"id":"1","progress":0.999,"total":215,"current":215}
+{"_e":"metro:bundling:done","_t":1788357034635,"id":"1","total":215,"ms":12621.158923}
+{"_e":"metro:client_log","_t":1788357034965,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788357034973,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1788357034975,"level":"error","data":["[ReferenceError: styles is not defined]","App@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:27825:7\nreact_stack_bottom_frame@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:19097:20\nrenderWithHooks@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:9970:40\nupdateFunctionComponent@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:11359:19\nbeginWork@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:11928:18\nrunWithFiberInDEV@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:6447:127\nperformUnitOfWork@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14355:95\nworkLoopSync@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14250:57\nrenderRootSync@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14235:9\nperformWorkOnRoot@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:13908:35\nperformWorkOnRootViaSchedulerTask@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:15010:24\nperformWorkUntilDeadline@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:20949:56\n","\nWithDevTools@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:25670:45"]}
+{"_e":"metro:client_log","_t":1788357034975,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:bundling:started","_t":1788357074108,"id":"3","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788357074109,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1788357074148,"id":"3","total":1,"ms":39.104397}
+{"_e":"metro:client_log","_t":1788357074559,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788357074560,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1788357074560,"level":"error","data":["[ReferenceError: styles is not defined]","App@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:27825:7\nreact_stack_bottom_frame@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:19097:20\nrenderWithHooks@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:9970:40\nupdateFunctionComponent@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:11359:19\nbeginWork@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:11928:18\nrunWithFiberInDEV@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:6447:127\nperformUnitOfWork@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14355:95\nworkLoopSync@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14250:57\nrenderRootSync@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14235:9\nperformWorkOnRoot@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:13908:35\nperformWorkOnRootViaSchedulerTask@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:15010:24\nperformWorkUntilDeadline@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:20949:56\n","\nWithDevTools@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:25670:45"]}
+{"_e":"metro:client_log","_t":1788357074561,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"root:init","_t":1788357334184,"format":"v0-jsonl","version":"57.0.21"}
+{"_e":"env:mode","_t":1788357334185,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788357334191,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788357334692,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788357335474,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788357335650,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nspawn /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/node_modules/fb-dotslash/bin/linux-musl.x86_64/dotslash EACCES"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788357335898,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788357341592,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788357345057,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788357345059,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788357345073,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788357346416,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1788357346936,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1788357347070,"id":"1","progress":0.04000000000000001,"total":9,"current":2}
+{"_e":"metro:bundling:progress","_t":1788357347088,"id":"1","progress":0.09,"total":9,"current":3}
+{"_e":"metro:bundling:progress","_t":1788357347186,"id":"1","progress":0.1111111111111111,"total":12,"current":4}
+{"_e":"metro:bundling:progress","_t":1788357348061,"id":"1","progress":0.17361111111111113,"total":12,"current":5}
+{"_e":"metro:bundling:progress","_t":1788357348161,"id":"1","progress":0.25,"total":12,"current":6}
+{"_e":"metro:bundling:progress","_t":1788357348286,"id":"1","progress":0.34027777777777785,"total":12,"current":7}
+{"_e":"metro:bundling:progress","_t":1788357348497,"id":"1","progress":0.4444444444444444,"total":12,"current":8}
+{"_e":"metro:bundling:progress","_t":1788357348598,"id":"1","progress":0.4444444444444444,"total":21,"current":10}
+{"_e":"metro:bundling:progress","_t":1788357348728,"id":"1","progress":0.4444444444444444,"total":23,"current":12}
+{"_e":"metro:bundling:progress","_t":1788357348837,"id":"1","progress":0.4444444444444444,"total":48,"current":16}
+{"_e":"metro:bundling:progress","_t":1788357348939,"id":"1","progress":0.4444444444444444,"total":53,"current":20}
+{"_e":"metro:bundling:progress","_t":1788357349040,"id":"1","progress":0.4444444444444444,"total":59,"current":26}
+{"_e":"metro:bundling:progress","_t":1788357349141,"id":"1","progress":0.4444444444444444,"total":64,"current":31}
+{"_e":"metro:bundling:progress","_t":1788357349242,"id":"1","progress":0.4444444444444444,"total":64,"current":34}
+{"_e":"metro:bundling:progress","_t":1788357349362,"id":"1","progress":0.4444444444444444,"total":64,"current":39}
+{"_e":"metro:bundling:progress","_t":1788357349462,"id":"1","progress":0.4444444444444444,"total":64,"current":42}
+{"_e":"metro:bundling:progress","_t":1788357349564,"id":"1","progress":0.4576124567474049,"total":68,"current":46}
+{"_e":"metro:bundling:progress","_t":1788357349664,"id":"1","progress":0.4576124567474049,"total":80,"current":48}
+{"_e":"metro:bundling:progress","_t":1788357349765,"id":"1","progress":0.4576124567474049,"total":92,"current":54}
+{"_e":"metro:bundling:progress","_t":1788357349865,"id":"1","progress":0.4576124567474049,"total":98,"current":60}
+{"_e":"metro:bundling:progress","_t":1788357349965,"id":"1","progress":0.4576124567474049,"total":103,"current":66}
+{"_e":"metro:bundling:progress","_t":1788357350094,"id":"1","progress":0.4576124567474049,"total":105,"current":70}
+{"_e":"metro:bundling:progress","_t":1788357350217,"id":"1","progress":0.5120781079033752,"total":109,"current":78}
+{"_e":"metro:bundling:progress","_t":1788357350319,"id":"1","progress":0.5311692042516517,"total":118,"current":86}
+{"_e":"metro:bundling:progress","_t":1788357350429,"id":"1","progress":0.5810937919914001,"total":122,"current":93}
+{"_e":"metro:bundling:progress","_t":1788357350530,"id":"1","progress":0.588967009194159,"total":129,"current":99}
+{"_e":"metro:bundling:progress","_t":1788357350631,"id":"1","progress":0.65939284300978,"total":133,"current":108}
+{"_e":"metro:bundling:progress","_t":1788357350732,"id":"1","progress":0.65939284300978,"total":143,"current":114}
+{"_e":"metro:bundling:progress","_t":1788357350832,"id":"1","progress":0.6622592152199761,"total":145,"current":118}
+{"_e":"metro:bundling:progress","_t":1788357350932,"id":"1","progress":0.6723999999999999,"total":150,"current":123}
+{"_e":"metro:bundling:progress","_t":1788357351040,"id":"1","progress":0.720264889196676,"total":152,"current":129}
+{"_e":"metro:bundling:progress","_t":1788357351141,"id":"1","progress":0.7224999999999999,"total":160,"current":136}
+{"_e":"metro:bundling:progress","_t":1788357351241,"id":"1","progress":0.7804584289961985,"total":163,"current":144}
+{"_e":"metro:bundling:progress","_t":1788357351354,"id":"1","progress":0.7804584289961985,"total":175,"current":150}
+{"_e":"metro:bundling:progress","_t":1788357351454,"id":"1","progress":0.7804584289961985,"total":183,"current":155}
+{"_e":"metro:bundling:progress","_t":1788357351555,"id":"1","progress":0.7804584289961985,"total":188,"current":165}
+{"_e":"metro:bundling:progress","_t":1788357351656,"id":"1","progress":0.8290581717451525,"total":190,"current":173}
+{"_e":"metro:bundling:progress","_t":1788357351756,"id":"1","progress":0.8594835069444445,"total":192,"current":178}
+{"_e":"metro:bundling:progress","_t":1788357351861,"id":"1","progress":0.890361604207758,"total":195,"current":184}
+{"_e":"metro:bundling:progress","_t":1788357351962,"id":"1","progress":0.890361604207758,"total":208,"current":192}
+{"_e":"metro:bundling:progress","_t":1788357352066,"id":"1","progress":0.9249101439985349,"total":209,"current":201}
+{"_e":"metro:bundling:progress","_t":1788357352163,"id":"1","progress":0.9718983624065503,"total":212,"current":209}
+{"_e":"metro:bundling:progress","_t":1788357352263,"id":"1","progress":0.9905882876468493,"total":212,"current":211}
+{"_e":"metro:bundling:progress","_t":1788357356160,"id":"1","progress":0.999,"total":212,"current":212}
+{"_e":"metro:bundling:progress","_t":1788357356261,"id":"1","progress":0.999,"total":216,"current":214}
+{"_e":"metro:bundling:progress","_t":1788357356297,"id":"1","progress":0.999,"total":216,"current":215}
+{"_e":"metro:bundling:progress","_t":1788357356397,"id":"1","progress":0.999,"total":216,"current":216}
+{"_e":"metro:bundling:done","_t":1788357356624,"id":"1","total":216,"ms":11565.771711}
+{"_e":"metro:client_log","_t":1788357356975,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788357356976,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1788357356978,"level":"error","data":["[ReferenceError: styles is not defined]","App@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:27904:7\nreact_stack_bottom_frame@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:19097:20\nrenderWithHooks@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:9970:40\nupdateFunctionComponent@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:11359:19\nbeginWork@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:11928:18\nrunWithFiberInDEV@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:6447:127\nperformUnitOfWork@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14355:95\nworkLoopSync@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14250:57\nrenderRootSync@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:14235:9\nperformWorkOnRoot@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:13908:35\nperformWorkOnRootViaSchedulerTask@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:15010:24\nperformWorkUntilDeadline@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:20949:56\n","\nWithDevTools@http://localhost:8081/index.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:25670:45"]}
+{"_e":"metro:client_log","_t":1788357356979,"level":"warn","data":["An error occurred in the <App> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"root:init","_t":1788357635618,"format":"v0-jsonl","version":"57.0.21"}
+{"_e":"env:mode","_t":1788357635620,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788357635625,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788357636101,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788357636855,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788357637025,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nspawn /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/node_modules/fb-dotslash/bin/linux-musl.x86_64/dotslash EACCES"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788357637258,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788357642774,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788357646210,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788357646212,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788357646228,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788357646327,"id":"1","progress":0.16000000000000003,"total":20,"current":8}
+{"_e":"metro:bundling:progress","_t":1788357646437,"id":"1","progress":0.16000000000000003,"total":65,"current":14}
+{"_e":"metro:bundling:progress","_t":1788357646537,"id":"1","progress":0.415844178530876,"total":107,"current":69}
+{"_e":"metro:bundling:progress","_t":1788357646637,"id":"1","progress":0.70140625,"total":160,"current":134}
+{"_e":"metro:bundling:progress","_t":1788357646737,"id":"1","progress":0.9615420869073429,"total":206,"current":202}
+{"_e":"metro:bundling:progress","_t":1788357646922,"id":"1","progress":0.999,"total":212,"current":212}
+{"_e":"metro:bundling:done","_t":1788357647003,"id":"1","total":212,"ms":792.454072}
+{"_e":"metro:client_log","_t":1788357647530,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788357647532,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:failed","_t":1788359834738,"id":null,"message":"SyntaxError: /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/App.js: Unexpected token (13:0)\n\n  11 | cartao: {\n  12 | 2\n> 13 | backgroundColor: \"#FFFFFF\",\n     | ^\n  14 | padding: 30,\n  15 | borderRadius: 15,\n  16 | alignItems: \"center\",","importStack":null,"filename":"App.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1788359834751,"level":"error","data":["[TransformError: SyntaxError: /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/App.js: Unexpected token (13:0)\n\n  11 | cartao: {\n  12 | 2\n> 13 | backgroundColor: \"#FFFFFF\",\n     | ^\n  14 | padding: 30,\n  15 | borderRadius: 15,\n  16 | alignItems: \"center\",]"]}
+{"_e":"metro:client_log","_t":1788359841706,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:failed","_t":1788359912317,"id":null,"message":"SyntaxError: /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/App.js: Unexpected keyword 'return'. (43:2)\n\n  41 |   const \n  42 |\n> 43 |   return (\n     |   ^\n  44 |   <View style={styles.container}>\n  45 |     <View style={styles.cartao}>\n  46 |       {/* Imagem Remota: Obrigatorio definir width e height no estilo */}","importStack":null,"filename":"App.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1788359912328,"level":"error","data":["[TransformError: SyntaxError: /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/App.js: Unexpected keyword 'return'. (43:2)\n\n  41 |   const \n  42 |\n> 43 |   return (\n     |   ^\n  44 |   <View style={styles.container}>\n  45 |     <View style={styles.cartao}>\n  46 |       {/* Imagem Remota: Obrigatorio definir width e height no estilo */}]"]}
+{"_e":"root:init","_t":1788361527422,"format":"v0-jsonl","version":"57.0.21"}
+{"_e":"env:mode","_t":1788361527424,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788361527429,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788361527892,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788361528565,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788361528719,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nspawn /home/mariposa/Documentos/react native univicosa/pratica-03/inf-204/node_modules/fb-dotslash/bin/linux-musl.x86_64/dotslash EACCES"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788361528943,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788361534524,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788361540475,"id":"1","platform":"web","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1788361540477,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788361540496,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788361540602,"id":"1","progress":0.2177777777777778,"total":15,"current":7}
+{"_e":"metro:bundling:progress","_t":1788361540701,"id":"1","progress":0.4379325259515571,"total":68,"current":45}
+{"_e":"metro:bundling:progress","_t":1788361540802,"id":"1","progress":0.683801775147929,"total":104,"current":86}
+{"_e":"metro:bundling:progress","_t":1788361540901,"id":"1","progress":0.8436762688614541,"total":135,"current":124}
+{"_e":"metro:bundling:progress","_t":1788361541017,"id":"1","progress":0.8672265625000001,"total":160,"current":149}
+{"_e":"metro:bundling:progress","_t":1788361541285,"id":"1","progress":0.9886686466942147,"total":176,"current":175}
+{"_e":"metro:bundling:progress","_t":1788361541386,"id":"1","progress":0.9889197530864198,"total":180,"current":179}
+{"_e":"metro:bundling:progress","_t":1788361542328,"id":"1","progress":0.999,"total":180,"current":180}
+{"_e":"metro:bundling:progress","_t":1788361542429,"id":"1","progress":0.999,"total":202,"current":184}
+{"_e":"metro:bundling:progress","_t":1788361542529,"id":"1","progress":0.999,"total":216,"current":207}
+{"_e":"metro:bundling:progress","_t":1788361542629,"id":"1","progress":0.999,"total":228,"current":227}
+{"_e":"metro:bundling:done","_t":1788361542715,"id":"1","total":228,"ms":2239.937203}
+{"_e":"metro:client_log","_t":1788361543182,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1788361543184,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1788361543186,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
