@@ -1,114 +1,150 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button, TextInput } from "react-native";
-import ItemTarefa from "./components/itemTarefa";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import MesarioInput from "./components/MesarioInput";
 
-export default function App() {
-  // Array de tarefas agora é um estado
-  const [tarefas, setTarefas] = useState([
-    { id: 1, descricao: "Estudar ES6+", concluida: true },
-    { id: 2, descricao: "Configurar ambiente Expo", concluida: true },
-    { id: 3, descricao: "Entender o funcionamento do JSX", concluida: false },
-    { id: 4, descricao: "Finalizar Roteiro de Pratica 02", concluida: false },
-  ]);
+export default function UrnaEletronica() {
+  //variaveis de estado
 
-  // Controla se a caixa de texto está aparecendo
-  const [mostrarInput, setMostrarInput] = useState(false);
-  // Guarda o texto que o usuário está digitando
-  const [novaDescricao, setNovaDescricao] = useState("");
+  const [votosA, setVotosA] = useState(0);
+  const [votosB, setVotosB] = useState(0);
+  const [votosC, setVotosC] = useState(0);
 
-  // Filtra apenas as tarefas pendentes
-  const tarefasPendentes = tarefas.filter(
-    (tarefa) => !tarefa.concluida
-  );
+  //armazenamento total dos votos
+  const totalVotos = votosA + votosB + votosC;
 
-  function abrirInput() {
-    setMostrarInput(true);
-  }
+  //função para zerar todas as urnas
+  const zerarUrna = () => {
+    setVotosA(0);
+    setVotosB(0);
+    setVotosC(0);
+  };
 
-  function confirmarNovaTarefa() {
-    // Evita adicionar tarefa vazia
-    if (novaDescricao.trim() === "") {
-      setMostrarInput(false);
-      return;
+  const calcularPorcentagem = (votosCandidato) => {
+    if (totalVotos === 0) {
+      return "0.0";
     }
 
-    const novaTarefa = {
-      id: tarefas.length + 1,
-      descricao: novaDescricao,
-      concluida: false,
-    };
+    return ((votosCandidato / totalVotos) * 100).toFixed(1);
+  };
 
-    setTarefas([...tarefas, novaTarefa]);
-    setNovaDescricao(""); // limpa o campo
-    setMostrarInput(false); // fecha o input
-  }
 
+  //retorno 
   return (
+
     <View style={styles.container}>
-      <Text style={styles.titulo}>Lista de Tarefas</Text>
+      <MesarioInput />
 
-      {/* Botão para abrir o input, só aparece se o input estiver fechado */}
-      {!mostrarInput && (
-        <Button title="Adicionar Tarefa" onPress={abrirInput} />
-      )}
+      <Text style={styles.titulo}>Painel de Votacao</Text>
 
-      {/* Caixa de texto + botão de confirmar, só aparece quando mostrarInput é true */}
-      {mostrarInput && (
-        <View style={styles.inputContainer}>
-          <TextInput
-            style={styles.input}
-            placeholder="Digite a nova tarefa..."
-            value={novaDescricao}
-            onChangeText={setNovaDescricao}
-            autoFocus
-          />
-          <Button title="Confirmar" onPress={confirmarNovaTarefa} />
-        </View>
-      )}
+      <View style={styles.candidatoContainer}>
 
-      {/* Lista principal */}
-      {tarefas.map((tarefa) => (
-        <ItemTarefa key={tarefa.id} tarefa={tarefa} />
-      ))}
+        <Text style={styles.nomeCandidato}>
+          Candidato A: {votosA} votos ({calcularPorcentagem(votosA)}%)
+        </Text>
+        <TouchableOpacity
+          style={styles.botaoVotar}
+          onPress={() => setVotosA((prev) => prev + 1)}
+        >
+          <Text style={styles.textoBotao}>Votar em A</Text>
+        </TouchableOpacity>
+      </View>
 
-      {/* Lista de tarefas pendentes */}
-      <Text style={styles.subtitulo}>Tarefas Pendentes</Text>
-      {tarefasPendentes.map((tarefa) => (
-        <ItemTarefa key={tarefa.id} tarefa={tarefa} />
-      ))}
+        <View style={styles.candidatoContainer}>
+        <Text style={styles.nomeCandidato}>
+          Candidato B: {votosB} votos ({calcularPorcentagem(votosB)}%)
+        </Text>
+        <TouchableOpacity
+          style={styles.botaoVotar}
+          onPress={() => setVotosB((prev) => prev + 1)}
+        >
+          <Text style={styles.textoBotao}>Votar em B</Text>
+        </TouchableOpacity>
+      </View>
+
+        <View style={styles.candidatoContainer}>
+        <Text style={styles.nomeCandidato}>
+          Candidato C: {votosC} votos ({calcularPorcentagem(votosC)}%)
+        </Text>
+        <TouchableOpacity
+          style={styles.botaoVotar}
+          onPress={() => setVotosC((prev) => prev + 1)}
+        >
+          <Text style={styles.textoBotao}>Votar em C</Text>
+        </TouchableOpacity>
+      </View>
+
+      <View style={styles.rodape}>
+        <Text style={styles.totalTexto}>Total de Votos: {totalVotos}</Text>
+        <TouchableOpacity style={styles.botaoZerar} onPress={zerarUrna}>
+          <Text style={styles.textoBotao}>Zerar Urna</Text>
+        </TouchableOpacity>
+        
+      </View>
+
+      
     </View>
   );
 }
-
+//objeto css
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
-    paddingTop: 50,
-    paddingHorizontal: 20,
+    backgroundColor: "#101418",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
   },
   titulo: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: "bold",
-    marginBottom: 20,
-    color: "#20325a",
+    letterSpacing: 0,
+    marginBottom: 24,
+    color: "#E6EDF3",
   },
-  subtitulo: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginTop: 20,
-    marginBottom: 10,
-    color: "#20325a",
-  },
-  inputContainer: {
-    marginBottom: 20,
-  },
-  input: {
-    backgroundColor: "#fff",
+  candidatoContainer: {
+    width: "100%",
+    backgroundColor: "#1B2229",
+    padding: 16,
+    borderRadius: 4,
     borderWidth: 1,
-    borderColor: "#ccc",
-    borderRadius: 8,
-    padding: 10,
+    borderColor: "#303942",
+    marginBottom: 12,
+    alignItems: "center",
+  },
+  nomeCandidato: {
+    fontSize: 18,
     marginBottom: 10,
+    color: "#D5DDE5",
+  },
+  botaoVotar: {
+    backgroundColor: "#247B83",
+    paddingVertical: 11,
+    borderRadius: 4,
+    width: "80%",
+    alignItems: "center",
+  },
+  textoBotao: {
+    color: "#F4F7F9",
+    fontWeight: "bold",
+  },
+  rodape: {
+    marginTop: 18,
+    alignItems: "center",
+    width: "100%",
+    borderTopWidth: 1,
+    borderColor: "#303942",
+    paddingTop: 18,
+  },
+  totalTexto: {
+    fontSize: 19,
+    fontWeight: "bold",
+    marginBottom: 15,
+    color: "#E6EDF3",
+  },
+  botaoZerar: {
+    backgroundColor: "#4B5560",
+    paddingVertical: 12,
+    paddingHorizontal: 22,
+    borderRadius: 4,
   },
 });
