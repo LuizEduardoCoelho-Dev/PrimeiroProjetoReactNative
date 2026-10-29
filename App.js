@@ -1,81 +1,140 @@
-import React, { useState } from "react";
-import { StyleSheet, Text, View, Button, TextInput } from "react-native";
-import ItemTarefa from "./components/itemTarefa";
+import React, { useState, useEffect } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  FlatList,
+  ActivityIndicator,
+  TextInput,
+  Button,
+  Alert,
+  RefreshControl,
+} from "react-native";
+import api from "./src/services/api";
 
 export default function App() {
-  // Array de tarefas agora é um estado
-  const [tarefas, setTarefas] = useState([
-    { id: 1, descricao: "Estudar ES6+", concluida: true },
-    { id: 2, descricao: "Configurar ambiente Expo", concluida: true },
-    { id: 3, descricao: "Entender o funcionamento do JSX", concluida: false },
-    { id: 4, descricao: "Finalizar Roteiro de Pratica 02", concluida: false },
-  ]);
+  const [utilizadores, setUtilizadores] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
 
-  // Controla se a caixa de texto está aparecendo
-  const [mostrarInput, setMostrarInput] = useState(false);
-  // Guarda o texto que o usuário está digitando
-  const [novaDescricao, setNovaDescricao] = useState("");
+  const buscarDados = async () => {
+    try {
+      const resposta = await api.get("/users");
+      setUtilizadores(resposta.data);
+    } catch (erro) {
+      console.log("Erro ao buscar dados:", erro.message);
+      Alert.alert("Erro", "Não foi possível carregar os utilizadores.");
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  };
 
-  // Filtra apenas as tarefas pendentes
-  const tarefasPendentes = tarefas.filter(
-    (tarefa) => !tarefa.concluida
-  );
+  useEffect(() => {
+    buscarDados();
+  }, []);
 
-  function abrirInput() {
-    setMostrarInput(true);
-  }
+  const onRefresh = async () => {
+    setRefreshing(true);
+    await buscarDados();
+  };
 
-  function confirmarNovaTarefa() {
-    // Evita adicionar tarefa vazia
-    if (novaDescricao.trim() === "") {
-      setMostrarInput(false);
+  const salvarUsuario = async () => {
+    if (!nome.trim() || !email.trim()) {
+      Alert.alert("Campos obrigatórios", "Preencha nome e email.");
       return;
     }
 
-    const novaTarefa = {
-      id: tarefas.length + 1,
-      descricao: novaDescricao,
-      concluida: false,
+    const payload = {
+      name: nome.trim(),
+      email: email.trim(),
+      body: `Nome: ${nome.trim()}`,
     };
 
-    setTarefas([...tarefas, novaTarefa]);
-    setNovaDescricao(""); // limpa o campo
-    setMostrarInput(false); // fecha o input
+    try {
+      const resposta = await api.post("/users", payload);
+      const novoUsuario = resposta.data;
+
+      setUtilizadores((usuariosAnteriores) => [
+        { ...novoUsuario, name: novoUsuario.name || nome.trim() },
+        ...usuariosAnteriores,
+      ]);
+      setNome("");
+      setEmail("");
+      setMostrarFormulario(false);
+      setLoading(false);
+      Alert.alert("Sucesso", `Usuário "${novoUsuario.name || nome.trim()}" criado com sucesso.`);
+    } catch (erro) {
+      console.log("Erro ao criar utilizador:", erro.message);
+      if (erro.response) {
+        console.log("Detalhes do erro:", erro.response.status, erro.response.data);
+      }
+      Alert.alert("Erro", "Não foi possível criar o utilizador.");
+    }
+  };
+
+  if (loading) {
+    return (
+      <View style={styles.centro}>
+        <ActivityIndicator size="large" color="#0000ff" />
+        <Text>A carregar utilizadores...</Text>
+      </View>
+    );
+  }
+
+  if (mostrarFormulario) {
+    return (
+      <View style={styles.containerFormulario}>
+        <Text style={styles.titulo}>Novo Utilizador</Text>
+
+        <TextInput
+          style={styles.input}
+          placeholder="Nome"
+          value={nome}
+          onChangeText={setNome}
+        />
+
+        <TextInput
+          style={styles.input}
+          placeholder="Email"
+          value={email}
+          onChangeText={setEmail}
+          keyboardType="email-address"
+          autoCapitalize="none"
+        />
+
+        <View style={styles.botoesRow}>
+          <Button title="Cancelar" onPress={() => setMostrarFormulario(false)} />
+          <Button title="Salvar" onPress={salvarUsuario} />
+        </View>
+      </View>
+    );
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Lista de Tarefas</Text>
+      <View style={styles.headerRow}>
+        <Text style={styles.titulo}>Lista de Utilizadores</Text>
+        <Button title="Novo" onPress={() => setMostrarFormulario(true)} />
+      </View>
 
-      {/* Botão para abrir o input, só aparece se o input estiver fechado */}
-      {!mostrarInput && (
-        <Button title="Adicionar Tarefa" onPress={abrirInput} />
-      )}
-
-      {/* Caixa de texto + botão de confirmar, só aparece quando mostrarInput é true */}
-      {mostrarInput && (
-        <View style={styles.inputContainer}>
-          <TextInput
-            style={styles.input}
-            placeholder="Digite a nova tarefa..."
-            value={novaDescricao}
-            onChangeText={setNovaDescricao}
-            autoFocus
-          />
-          <Button title="Confirmar" onPress={confirmarNovaTarefa} />
-        </View>
-      )}
-
-      {/* Lista principal */}
-      {tarefas.map((tarefa) => (
-        <ItemTarefa key={tarefa.id} tarefa={tarefa} />
-      ))}
-
-      {/* Lista de tarefas pendentes */}
-      <Text style={styles.subtitulo}>Tarefas Pendentes</Text>
-      {tarefasPendentes.map((tarefa) => (
-        <ItemTarefa key={tarefa.id} tarefa={tarefa} />
-      ))}
+      <FlatList
+        data={utilizadores}
+        keyExtractor={(item) => (item.id ? item.id.toString() : item.email)}
+        renderItem={({ item }) => (
+          <View style={styles.cartao}>
+            <Text style={styles.nome}>{item.name}</Text>
+            <Text style={styles.email}>{item.email}</Text>
+          </View>
+        )}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+        }
+        contentContainerStyle={styles.listContent}
+      />
     </View>
   );
 }
@@ -83,32 +142,62 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
+    backgroundColor: "#F5F5F5",
     paddingTop: 50,
     paddingHorizontal: 20,
+  },
+  containerFormulario: {
+    flex: 1,
+    backgroundColor: "#F5F5F5",
+    paddingTop: 50,
+    paddingHorizontal: 20,
+    justifyContent: "center",
+  },
+  centro: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  headerRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 20,
   },
   titulo: {
     fontSize: 24,
     fontWeight: "bold",
-    marginBottom: 20,
-    color: "#20325a",
+    color: "#14325A",
   },
-  subtitulo: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginTop: 20,
+  listContent: {
+    paddingBottom: 20,
+  },
+  cartao: {
+    backgroundColor: "#FFF",
+    padding: 15,
     marginBottom: 10,
-    color: "#20325a",
+    borderRadius: 8,
+    elevation: 2,
   },
-  inputContainer: {
-    marginBottom: 20,
+  nome: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  email: {
+    color: "#666",
+    marginTop: 5,
   },
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: "#FFF",
     borderWidth: 1,
-    borderColor: "#ccc",
+    borderColor: "#D9D9D9",
     borderRadius: 8,
-    padding: 10,
-    marginBottom: 10,
+    padding: 12,
+    marginBottom: 15,
+  },
+  botoesRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 12,
   },
 });
